@@ -1,0 +1,65 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@1.1.36
+3 info using node@v0.8.2
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 verbose config file C:\Users\jburgess\.npmrc
+6 verbose config file C:\Program Files (x86)\nodejs\etc\npmrc
+7 verbose config file C:\Program Files (x86)\nodejs\node_modules\npm\npmrc
+8 verbose read json C:\Users\jburgess\Desktop\hubapps\node-js-getting-started\package.json
+9 verbose readDependencies using package.json deps
+10 verbose install where, deps [ 'C:\\Users\\jburgess\\Desktop\\hubapps\\node-js-getting-started',
+10 verbose install   [ 'express' ] ]
+11 verbose from cache C:\Users\jburgess\Desktop\hubapps\node-js-getting-started\package.json
+12 info preinstall node-js-getting-started@0.1.2
+13 verbose from cache C:\Users\jburgess\Desktop\hubapps\node-js-getting-started\package.json
+14 verbose readDependencies using package.json deps
+15 verbose cache add [ 'express@~4.9.x', null ]
+16 silly cache add name=undefined spec="express@~4.9.x" args=["express@~4.9.x",null]
+17 verbose parsed url { pathname: 'express@~4.9.x',
+17 verbose parsed url   path: 'express@~4.9.x',
+17 verbose parsed url   href: 'express@~4.9.x' }
+18 silly cache add name="express" spec="~4.9.x" args=["express","~4.9.x"]
+19 verbose parsed url { pathname: '~4.9.x', path: '~4.9.x', href: '~4.9.x' }
+20 verbose addNamed [ 'express', '~4.9.x' ]
+21 verbose addNamed [ null, '>=4.9.0- <4.10.0-' ]
+22 silly lockFile e3d29b08-express-4-9-x express@~4.9.x
+23 verbose lock express@~4.9.x C:\Users\jburgess\AppData\Roaming\npm-cache\e3d29b08-express-4-9-x.lock
+24 silly addNameRange { name: 'express', range: '>=4.9.0- <4.10.0-', hasData: false }
+25 verbose url raw express
+26 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+27 verbose url resolved https://registry.npmjs.org/express
+28 info retry registry request attempt 1 at 12:03:12
+29 http GET https://registry.npmjs.org/express
+30 info retry will retry, error on last attempt: Error: SSL Error: SELF_SIGNED_CERT_IN_CHAIN
+31 info retry registry request attempt 2 at 12:03:23
+32 http GET https://registry.npmjs.org/express
+33 info retry will retry, error on last attempt: Error: SSL Error: SELF_SIGNED_CERT_IN_CHAIN
+34 info retry registry request attempt 3 at 12:04:24
+35 http GET https://registry.npmjs.org/express
+36 silly lockFile e3d29b08-express-4-9-x express@~4.9.x
+37 error Error: SSL Error: SELF_SIGNED_CERT_IN_CHAIN
+37 error     at ClientRequest.<anonymous> (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\request\main.js:440:26)
+37 error     at ClientRequest.g (events.js:185:14)
+37 error     at ClientRequest.EventEmitter.emit (events.js:88:17)
+37 error     at HTTPParser.parserOnIncomingClient [as onIncoming] (http.js:1445:7)
+37 error     at HTTPParser.parserOnHeadersComplete [as onHeadersComplete] (http.js:111:23)
+37 error     at CleartextStream.socketOnData [as ondata] (http.js:1356:20)
+37 error     at CleartextStream.CryptoStream._push (tls.js:396:27)
+37 error     at SecurePair.cycle (tls.js:750:20)
+37 error     at EncryptedStream.CryptoStream.write (tls.js:131:13)
+37 error     at Socket.ondata (stream.js:38:26)
+37 error  [Error: SSL Error: SELF_SIGNED_CERT_IN_CHAIN]
+38 error You may report this log at:
+38 error     <http://github.com/isaacs/npm/issues>
+38 error or email it to:
+38 error     <npm-@googlegroups.com>
+39 error System Windows_NT 6.1.7601
+40 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+41 error cwd C:\Users\jburgess\Desktop\hubapps\node-js-getting-started
+42 error node -v v0.8.2
+43 error npm -v 1.1.36
+44 error message SSL Error: SELF_SIGNED_CERT_IN_CHAIN
+45 verbose exit [ 1, true ]
